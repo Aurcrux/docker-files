@@ -1,3 +1,3 @@
-# docker-duplicity
+# duplicity
 
-Duplicity docker container http://duplicity.nongnu.org/
+For more details on how to use duplicity http://duplicity.nongnu.org/
