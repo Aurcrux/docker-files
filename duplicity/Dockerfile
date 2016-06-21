@@ -11,6 +11,16 @@ RUN apt-get update && \
     apt-get install --yes --force-yes duplicity && \
     apt-get clean
 
+RUN apt-get install --yes --force-yes \
+        python-pip \
+        python-dev \
+        libffi-dev \
+        libssl-dev && \
+    apt-get clean && \
+    pip install --upgrade pip && \
+    /usr/local/bin/pip install --upgrade pyrax && \
+    /usr/local/bin/pip install --upgrade requests[security]
+
 WORKDIR /data/
 
 CMD ["--help"]
