@@ -1,5 +1,7 @@
 FROM ubuntu:14.04
 
+MAINTAINER Anas ASO <aso.anas@protonmail.com>
+
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update && \

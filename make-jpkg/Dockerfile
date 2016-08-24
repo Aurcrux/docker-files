@@ -1,5 +1,7 @@
 FROM debian:jessie
 
+MAINTAINER Anas ASO <aso.anas@protonmail.com>
+
 RUN \
     bash -c 'echo -e "deb http://httpredir.debian.org/debian jessie main contrib\ndeb http://httpredir.debian.org/debian jessie-updates main\ndeb http://security.debian.org jessie/updates main" > /etc/apt/sources.list' && \
     apt-get update && \
