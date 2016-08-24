@@ -4,7 +4,7 @@ A docker container to run haproxy and set basic configuration using environment 
 ### Supported ENV variables
 
 ##### Mandatory :
-- BACKEND_SERVERS : <host_OR_ip:port>
+- BACKEND_SERVERS : "host_OR_ip:port"
 
 ##### Optional :
 - GLOBAL_MAXCONN : defaults to 2000
