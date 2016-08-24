@@ -1,6 +1,5 @@
 #!/bin/bash
 
-set -x
 set -e
 
 # Check if the backend server were exported as ENV variables
