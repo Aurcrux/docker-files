@@ -56,5 +56,10 @@ done
 # Check if the generate config is valid 
 haproxy -c -f /tmp/haproxy.cfg
 
+# Print configuration file if valid
+echo "################ BEGIN : Configuration file content."
+cat /tmp/haproxy.cfg
+echo "################ END : Configuration file content."
+
 # Run haproxy
 exec haproxy -f /tmp/haproxy.cfg
