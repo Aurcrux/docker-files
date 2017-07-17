@@ -15,6 +15,6 @@ WORKDIR /workdir
 
 VOLUME ["/workdir"]
 
-CMD [ "--help" ]
+CMD ["--help"]
 
-ENTRYPOINT ["fakeroot" , "make-jpkg" ]
+ENTRYPOINT ["make-jpkg"]
